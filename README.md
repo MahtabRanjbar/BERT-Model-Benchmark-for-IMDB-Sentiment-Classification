@@ -109,7 +109,7 @@ pip install -r requirements.txt
 
 2. Run the benchmark:
 ```bash
-python main.py
+python src/main.py
 ```
 3. Results will be saved in `benchmark_results.csv` and `benchmark_results.png`.
 
