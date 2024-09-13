@@ -1,0 +1,28 @@
+data:
+  num_samples: 1000
+
+training:
+  batch_size: 16
+  num_epochs: 3
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+
+evaluation:
+  batch_size: 16
+
+early_stopping:
+  patience: 3
+  min_delta: 0.001
+
+checkpointing:
+  save_top_k: 2
+  monitor: "eval_accuracy"
+  mode: "max"
+
+cross_validation:
+  num_folds: 5
+
+scheduler:
+  name: "linear"
+  num_warmup_steps: 500
